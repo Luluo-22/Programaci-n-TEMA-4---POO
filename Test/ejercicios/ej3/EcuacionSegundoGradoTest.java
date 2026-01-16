@@ -7,17 +7,20 @@
  */
 
 package ejercicios.ej3;
-
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class EcuacionSegundoGradoTest {
 
     @Test
     void calcularEcuacion() {
+        List<Double> result = new ArrayList<>();
         //numeros enteros
-        EcuacionSegundoGrado ec1 = new EcuacionSegundoGrado(1, 2, 3);
+        EcuacionSegundoGrado ec1 = new EcuacionSegundoGrado(1, 2, -15);
+        result = [3, -5];
+        assertEquals( result,  ec1.calcularEcuacion() );
         //cada elemento a 0
         EcuacionSegundoGrado ec2 = new EcuacionSegundoGrado(0, 3, 2);
         EcuacionSegundoGrado ec3 = new EcuacionSegundoGrado(6, 0, 2);
